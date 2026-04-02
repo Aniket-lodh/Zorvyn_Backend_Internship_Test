@@ -13,7 +13,7 @@ async def seed_admin():
             print("[-] An admin user already exists. Skipping bootstrap.")
             return
 
-        admin_id = uuid.uuid4()
+        admin_id = uuid.UUID("11111111-1111-1111-1111-111111111111")
         admin = User(
             id=admin_id,
             name="Initial Admin",

@@ -25,7 +25,9 @@ app = FastAPI(
         "**Role-based access** is enforced via the `X-User-Id` header. "
         "The user is fetched from the database and their role is derived from `user.role`.\n\n"
         "Roles: `viewer` (dashboard only), `analyst` (read records + analytics), `admin` (full access).\n\n"
-        "Run `uv run task seed` to bootstrap the initial admin user on a fresh database."
+        "Run `uv run task seed` to bootstrap the initial admin user on a fresh database if you have decided to clone the repo and want to run it locally.\n\n"
+        "**Evaluators:** An initial admin user is automatically created with this exact `X-User-Id`:\n"
+        "`11111111-1111-1111-1111-111111111111`"
     ),
     lifespan=lifespan,
 )
